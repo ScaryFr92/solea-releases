@@ -1,0 +1,30 @@
+# Annonce chaque version stable dans #announcements sur Discord, avec une mention du rôle Updates.
+# Les préversions n'y vont pas : elles arrivent déjà dans #pre-releases par le webhook GitHub.
+name: Announce on Discord
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  announce:
+    if: ${{ !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post to Discord
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_ANNOUNCE_WEBHOOK }}
+          UPDATES_ROLE: ${{ vars.DISCORD_UPDATES_ROLE }}
+          DOWNLOADS_CHANNEL: ${{ vars.DISCORD_DOWNLOADS_CHANNEL }}
+          NAME: ${{ github.event.release.name }}
+          URL: ${{ github.event.release.html_url }}
+          BODY: ${{ github.event.release.body }}
+        run: |
+          # Premier paragraphe des notes, puis les titres de section en liste.
+          intro=$(printf '%s\n' "$BODY" | tr -d '\r' | awk 'NF && !/^#/ && !/^>/ {print; exit}')
+          sections=$(printf '%s\n' "$BODY" | tr -d '\r' | sed -n 's/^### \(.*\)/• \1/p')
+          content=$(printf '<@&%s>\n# 🚀 %s is out!\n%s\n\n**What'"'"'s new**\n%s\n\n📥 Download: <#%s>\n📝 Full release notes: <%s>' \
+            "$UPDATES_ROLE" "$NAME" "$intro" "$sections" "$DOWNLOADS_CHANNEL" "$URL" | head -c 1990)
+          jq -n --arg c "$content" --arg r "$UPDATES_ROLE" \
+            '{content: $c, allowed_mentions: {roles: [$r]}}' |
+            curl -sSf -H 'Content-Type: application/json' -d @- "$WEBHOOK"
