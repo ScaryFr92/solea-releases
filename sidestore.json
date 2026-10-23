@@ -20,11 +20,11 @@
       "versions": [
         {
           "version": "1.1.0",
-          "buildVersion": "4",
+          "buildVersion": "5",
           "date": "2026-10-23",
           "localizedDescription": "## Test version\r\n\r\n### Skip intro, recap and credits\r\n- **No more \"next episode\" at the start of an episode**: some community timestamps place the end credits in the first minutes (Dr. Stone), so skipping the recap or the intro offered the next episode. Credits and previews now only count in the last third of the episode, after the intro, and the next episode is never offered before then.\r\n- **One color per passage on the progress bar**: recap in blue, intro in gold, end credits in coral, preview in purple.\r\n\r\n### Profiles\r\n- **Drawn avatars and profile photos**: from the gallery, the camera, a web address, or sent from your phone to the TV with an encrypted QR code. They are kept in your Solea account.\r\n- **Hide categories per profile**, and Movies / Series shown as rows or with categories on the left.\r\n\r\n### And also\r\n- **Launch screen**: the Solea logo on a night background, then a rising-sun glow while the app starts, instead of a white screen.\r\n- **French voices** of animated movies and dubbing roles on actors' pages (Wikipedia).\r\n- **Channel previews** are smaller and muted.\r\n- **Smoother gestures**: swipe back and mini player with springs, buttons that press down, long-press vibration, \"Reduce motion\" respected.\r\n- **Jellyfin casting**: full quality instead of 360p, several addresses per server (domain, home network, Tailscale), file subtitles used directly.\r\n- **Chromecast**: the picture keeps its proportions on every TV.\r\n- Updates are checked when you come back to the app.\r\n- Android build numbers are now readable (101000000 for 1.1.0).\r\n\r\n## Downloads\r\n\r\n- **Android box, Android TV, Fire TV, Android phones and tablets**: `Solea-1.1.0-android.apk`\r\n- **Windows**: `Solea-1.1.0-Setup.exe` (installer) or `Solea-1.1.0-windows.zip` (portable)\r\n- **iPhone, iPad**: with SideStore, see [solea.tv/en/install-iphone](https://solea.tv/en/install-iphone/)\r\n\r\nThanks to **Brout** for the ideas!\r\n",
           "downloadURL": "https://github.com/ScaryFr92/solea-releases/releases/download/v1.1.0/Solea-1.1.0-ios.ipa",
-          "size": 42341344,
+          "size": 42340598,
           "minOSVersion": "15.0"
         },
         {
