@@ -19,6 +19,15 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "1.2.0",
+          "buildVersion": "1",
+          "date": "2026-10-25",
+          "localizedDescription": "## Test version\n\n### Subtitles\n- **Signs in their place**: text that an ASS subtitle places on the picture (labels on a diagram, a shop sign…) now appears where it belongs, smaller, fading in, under the dialogue and in your subtitle style, instead of piling up in a big block in the middle of the screen. New **Signs** setting: in place, at the top, or hidden (also when casting to a Chromecast).\n- **ASS subtitles \"As in the file\"** (Android, new setting): fonts, colors and signs drawn exactly as the subtitle file intends.\n- **Picture-based subtitles** (Blu-ray, DVD) are now shown on Android.\n- **Italics are kept** (off-screen voices, thoughts), and two new settings hide **opening and ending lyrics** and **hearing-impaired notes**.\n- **No more rows of numbers** on screen: vector drawings inside some subtitle files are no longer shown as text.\n- Subtitle files in **UTF-16** or **older Windows encodings** are read correctly (apostrophes, accents).\n\n### Casting\n- **Jellyfin**: file subtitles are always shown and stay in sync after a long pause; the chosen subtitle track is respected; older Chromecasts that can't play HEVC get a converted video; casting works when your phone reaches the server through a VPN.\n- **iPhone**: the volume buttons control the TV only in Solea or when the iPhone is locked; in other apps they control the iPhone again.\n\n### And also\n- **Movies and series after changing subscription**: an empty list from the provider is asked again, and \"Refresh\" always downloads it again.\n- **iPhone**: the home page no longer turns grey when coming back to it.\n\n## Downloads\n\n- **Android box, Android TV, Fire TV, Android phones and tablets**: `Solea-1.2.0-android.apk`\n- **Windows**: `Solea-1.2.0-Setup.exe` (installer) or `Solea-1.2.0-windows.zip` (portable)\n- **iPhone, iPad**: with SideStore, see [solea.tv/en/install-iphone](https://solea.tv/en/install-iphone/)\n",
+          "downloadURL": "https://github.com/ScaryFr92/solea-releases/releases/download/v1.2.0/Solea-1.2.0-ios.ipa",
+          "size": 42365406,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "1.1.0",
           "buildVersion": "6",
           "date": "2026-10-23",
