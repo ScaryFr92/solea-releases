@@ -20,11 +20,11 @@
       "versions": [
         {
           "version": "1.2.5",
-          "buildVersion": "1",
+          "buildVersion": "2",
           "date": "2026-10-26",
           "localizedDescription": "## Test version\n\n### Settings\n- **Reorganized**: six categories instead of seven (General, Playback, Subscription, Accounts, Advanced, About). Home options (categories, Anime, Sports) are now in General, subtitles in Playback, and technical options in Advanced. A single \"Refresh\" updates both the subscription and the catalog.\n\n### Subtitles\n- **Appearance in detail**: size, weight, colors of the text, outline and background, outline, shadow and height, with \"Default values\" and \"Undo changes\".\n- **Turn on automatically**: when the audio isn't in your language (Auto), always, only forced subtitles, or never. A choice made on a title still wins.\n- **Keyboard**: turn subtitles on or off, and shift them earlier or later by 0.25 s. Subtitles also stay visible in the small player window.\n\n### Jellyfin\n- **External address**: add a Tailscale link or a domain name next to your home address. Solea uses the home address when it answers and switches to the external one when you're away.\n- **On TV**: a QR code lets you type the server address and your login on your phone instead of the remote.\n\n### Sports and Anime\n- **Sports** can be shown as a column on the left, like movie and series categories, or as chips at the top (same setting as the libraries).\n- **Anime** is shown as a column until you choose a layout.\n\n## Downloads\n\n- **Android box, Android TV, Fire TV, Android phones and tablets**: `Solea-1.2.5-android.apk`\n- **Windows**: `Solea-1.2.5-Setup.exe` (installer) or `Solea-1.2.5-windows.zip` (portable)\n- **iPhone, iPad**: with SideStore, see [solea.tv/en/install-iphone](https://solea.tv/en/install-iphone/)\n",
           "downloadURL": "https://github.com/ScaryFr92/solea-releases/releases/download/v1.2.5/Solea-1.2.5-ios.ipa",
-          "size": 42453509,
+          "size": 42454416,
           "minOSVersion": "15.0"
         },
         {
