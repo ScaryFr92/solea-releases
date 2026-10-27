@@ -15,7 +15,7 @@
   <a href="#key-features">Key Features</a> •
   <a href="#screenshots">Screenshots</a> •
   <a href="#community">Community</a> •
-  <a href="#planned-features">Planned Features</a> •
+  <a href="#whats-new">What's New</a> •
   <a href="#built-with-claude">Built with Claude</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
@@ -23,8 +23,8 @@
 
 <div align="center">
 
-  [![Latest release](https://img.shields.io/github/v/release/gabrielchamak/solea-releases?display_name=tag&color=E8506E)](https://github.com/gabrielchamak/solea-releases/releases/latest)
-  [![Downloads](https://img.shields.io/github/downloads/gabrielchamak/solea-releases/total?color=FFB36B)](https://github.com/gabrielchamak/solea-releases/releases)
+  [![Latest release](https://img.shields.io/github/v/release/ScaryFr92/solea-releases?display_name=tag&color=E8506E)](https://github.com/ScaryFr92/solea-releases/releases/latest)
+  [![Downloads](https://img.shields.io/github/downloads/ScaryFr92/solea-releases/total?color=FFB36B)](https://github.com/ScaryFr92/solea-releases/releases)
   [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/42FVvupACy)
   [![Built with Claude](https://img.shields.io/badge/built%20with-Claude-D97757)](#built-with-claude)
 
@@ -38,7 +38,7 @@ This repository hosts the **releases** of Solea (downloads and release notes). T
 
 ## Download
 
-Get the latest version on the [releases page](https://github.com/gabrielchamak/solea-releases/releases/latest):
+Get the latest version on the [releases page](https://github.com/ScaryFr92/solea-releases/releases/latest):
 
 * **Android TV, Fire TV Stick, Android boxes, phones and tablets** – `Solea-<version>-android.apk`
   (on a Fire TV: install the *Downloader* app, then type `solea.tv/apk`)
@@ -54,7 +54,7 @@ a computer once (about 10 minutes); after that, updates arrive on the iPhone. St
 Already have SideStore? Add the Solea source (Sources › +):
 
 ```
-https://raw.githubusercontent.com/gabrielchamak/solea-releases/main/sidestore.json
+https://raw.githubusercontent.com/ScaryFr92/solea-releases/main/sidestore.json
 ```
 
 > [!WARNING]
@@ -63,29 +63,34 @@ https://raw.githubusercontent.com/gabrielchamak/solea-releases/main/sidestore.js
 
 ## Key Features
 
-* Live TV, movies, series and replay from your own subscription, with the program guide
-* Xtream Codes accounts and M3U / M3U8 playlists, with their XMLTV program guide (EPG)
+* Live TV, movies, series, anime and replay from your own subscription
+* Xtream Codes accounts and M3U / M3U8 playlists, with their XMLTV program guide (EPG); several subscriptions you can
+  switch between, and up to 5 backup servers per subscription
+* Program guide as a grid, with a live preview of the selected channel
 * Sign in a TV from your phone: scan the QR code, type on the phone (end-to-end encrypted)
 * Several versions of a title shown as one (quality, language) – the best one your device can play is picked for you
-* Forgiving search – typos, accents, missing spaces
+* Forgiving search – typos, accents, missing spaces – and voice search with the remote's mic
 * Rich movie and series pages – backdrops, cast with photos, trailers, similar titles (TMDB)
-* Anime library (optional) – dubbed or in Japanese with subtitles
-* Plays everything – hardware decoding on Android, mpv elsewhere: MKV, H.265, HDR, AC3, DTS…
+* Sports space – matches and live events of the coming days with the channels showing them, live scores
+* Plays everything – hardware decoding on Android, mpv elsewhere: MKV, H.265, HDR, AC3, DTS, TrueHD…
+* Subtitles – from the file or found online (OpenSubtitles, SubDL, SubSource, Addic7ed), one-press sync, ASS signs in
+  place, appearance in detail
+* Skip intro, recap and credits, next episode, playback speed, picture-in-picture on Android, iPhone and iPad
 * Remembers your audio and subtitle choices per title, resumes where you left off
-* Subtitles from OpenSubtitles in your language, with a sync tool when they are out of time
-* Skip intro and recap, next episode, playback speed, picture-in-picture on Android
-* Multiple profiles – PIN codes, parental control, favorites and “Continue watching” per profile
-* Cast to Chromecast (Dolby and DTS audio converted on the fly, subtitles included), to another Solea box or to
-  DLNA TVs
-* Optional Solea account – profiles, favorites and progress synced across devices, end-to-end encrypted
+* Multiple profiles – avatars or photos, PIN codes, parental control, favorites and "Continue watching" per profile
+* Cast to Chromecast (Dolby and DTS converted on the fly, subtitles included), AirPlay, DLNA TVs or another Solea device
+* Jellyfin – your own server's movies and series next to your subscription, used as a backup when the provider is busy
+* Trakt – watched titles and series progress sent by themselves, your watchlist and lists in the app
+* Discord – "Watching Solea" on your profile (Windows)
+* Optional Solea account – subscriptions, profiles, favorites, progress and services synced across devices, end-to-end
+  encrypted
 * A TV interface built for the remote, and a full interface for mouse, keyboard and touch
 * French and English
 * Platforms
-  - Android TV + Fire TV
+  - Android TV, Fire TV and Android boxes
   - Android phones and tablets
-  - iPhone + iPad
+  - iPhone + iPad (with SideStore)
   - Windows
-
 
 ## Screenshots
 
@@ -113,50 +118,28 @@ https://raw.githubusercontent.com/gabrielchamak/solea-releases/main/sidestore.js
 
 Questions, bug reports, ideas, beta versions: join us on **[Discord](https://discord.gg/42FVvupACy)**.
 
-You can also open an [issue](https://github.com/gabrielchamak/solea-releases/issues):
+You can also open an [issue](https://github.com/ScaryFr92/solea-releases/issues):
 - check first that it hasn't been reported already;
 - give the steps to reproduce it, your device (TV box model, phone, Windows…) and your Solea version;
 - **never** paste your subscription address, username, password or playlist address.
 
-## Planned Features
+## What's New
 
-### New in 0.9.0
+Each version comes with its notes on the [releases page](https://github.com/ScaryFr92/solea-releases/releases), in
+English, and on [solea.tv](https://solea.tv/en/) in French. Versions ending in `.0` (1.2.0) are final versions, offered
+as updates by the app; the others (1.2.5) are test versions: turn on **Settings › About › Beta versions** to get them.
 
-| Feature | Tested on a device |
-|---|---|
-| Sign in a TV from your phone through solea.tv – scan the QR code, type on your phone; end-to-end encrypted, no need to be on the same Wi-Fi | ✅ Fire TV · 🧪 with a real phone scanning the code |
-| M3U playlists, with their XMLTV program guide | ✅ Fire TV, playlist of channels · 🧪 playlist with movies |
-| No empty pages: Movies, Series and Anime hidden when your subscription has none | ✅ Fire TV |
-| Picture in Picture on iPhone and iPad (leave the app or tap the button), Picture in Picture button on Android phones | 🧪 iPhone, Android phones |
-| Player gestures explained the first time on phones and tablets | ✅ |
-| Settings › About: contact, privacy, terms of use, open source licenses | ✅ Fire TV |
-| "Continue without an account" remembered; "Continue watching" only shows titles of the current subscription | ✅ Fire TV |
+### Coming later
 
-### Built, not tested yet
-
-| Feature | Not tested yet on |
-|---|---|
-| Anime library | Fire TV, phones (✅ Windows) |
-| PIN codes and parental control per profile | all devices |
-| Casting to a Chromecast from an Android phone (Dolby / DTS converted) | Android phones |
-| Casting to DLNA TVs (Samsung, LG…) | Windows |
-| Touch gestures in the player (pinch, double tap, long press, swipe) | Android phones, iPhone |
-| Floating mini player | Windows, iPad |
-| "Now Playing" on the iPhone lock screen | iPhone |
-
-### Later
-
-* Samsung TVs (Tizen) – prototype working on the emulator
+* Samsung TVs (Tizen)
 * Apple TV
-* Program guide (EPG) as a grid, program reminders
-* Series in M3U playlists
 
 ## Built with Claude
 
-Solea is built by [@gabrielchamak](https://github.com/gabrielchamak) together with **Claude**, Anthropic's AI, using
-[Claude Code](https://claude.com/claude-code). Gabriel decides what the app should be and tests every feature on real
-devices (TV boxes, Fire TV, iPhone, Windows); Claude writes most of the code, researches the hard parts (video decoding,
-Chromecast audio conversion, subtitle sync, audio language detection…) and runs the tests.
+Solea is built by [@ScaryFr92](https://github.com/ScaryFr92) together with **Claude**, Anthropic's AI, using
+[Claude Code](https://claude.com/claude-code). ScaryFr92 decides what the app should be and tests every feature on real
+devices (TV boxes, Fire TV, Android TVs, iPhone, Windows); Claude writes most of the code, researches the hard parts
+(video decoding, Chromecast audio conversion, subtitle sync, audio language detection…) and runs the tests.
 
 ## Credits
 
@@ -164,7 +147,9 @@ This software uses the following services and open source projects:
 - [Flutter](https://flutter.dev/)
 - [TMDB](https://www.themoviedb.org) – movie and series data and images. *This product uses the TMDB API but is not
   endorsed or certified by TMDB.*
-- [OpenSubtitles](https://www.opensubtitles.com) – subtitles; [TheIntroDB](https://theintrodb.org) – intro and recap timings
+- [OpenSubtitles](https://www.opensubtitles.com), [SubDL](https://subdl.com), [SubSource](https://subsource.net),
+  [Addic7ed](https://www.addic7ed.com) – subtitles; [TheIntroDB](https://theintrodb.org) – intro and recap timings
+- [Trakt](https://trakt.tv) – watch history and lists; [Jellyfin](https://jellyfin.org) – your own media server
 - [ExoPlayer / Media3](https://developer.android.com/media/media3), [mpv](https://mpv.io) through
   [media_kit](https://github.com/media-kit/media-kit), [FFmpeg](https://ffmpeg.org) (LGPL) – playback
 - [iptv-org](https://github.com/iptv-org) – channel logos; [flag-icons](https://github.com/lipis/flag-icons) (MIT) – flags
@@ -172,5 +157,5 @@ This software uses the following services and open source projects:
 
 ## License
 
-© Gabriel Chamak. All rights reserved. Solea is free to download and use; it may not be modified, resold or
+© ScaryFr92. All rights reserved. Solea is free to download and use; it may not be modified, resold or
 redistributed.
